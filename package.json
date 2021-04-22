@@ -1,0 +1,29 @@
+{
+  "name": "generator-sfcc",
+  "version": "0.0.0-alpha1",
+  "description": "A Yeoman generator to generate Salesforce Commerce Cloud components",
+  "main": "cartridge/index.js",
+  "engines": {
+    "node": ">=12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swisscat/generator-sfcc.git"
+  },
+  "files": [
+    "cartridge"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "sfcc",
+    "sfra",
+    "cartridge",
+    "project",
+    "metadata"
+  ],
+  "author": "Etienne Favre",
+  "license": "MIT",
+  "dependencies": {
+    "yeoman-generator": "^1.1.1"
+  }
+}

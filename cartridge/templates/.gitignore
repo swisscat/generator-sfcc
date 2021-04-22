@@ -1,0 +1,5 @@
+node_modules/*
+dw.json
+.husky
+
+cartridges/int_datatrans/cartridge/static/*
