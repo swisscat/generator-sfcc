@@ -1,8 +1,9 @@
 # Salesforce Commerce Cloud Generator
 
 [![Version](https://img.shields.io/npm/v/generator-sfcc.svg)](https://npmjs.org/package/generator-sfcc)
-[![Build Status](https://img.shields.io/travis/swisscat/generator-sfcc/master.svg)](https://travis-ci.org/sfcc/generator-sfcc)
+[![Build Status](https://img.shields.io/travis/swisscat/generator-sfcc/master.svg)](https://travis-ci.com/sfcc/generator-sfcc)
 [![codecov](https://codecov.io/gh/swisscat/generator-sfcc/branch/master/graph/badge.svg)](https://codecov.io/gh/swisscat/generator-sfcc)
+[![Dependencies](https://david-dm.org/swisscat/generator-sfcc.svg)](https://david-dm.org/swisscat/generator-sfcc)
 
 A [Yeoman](https://yeoman.io) generator to create Saleforce Commerce Cloud components.
 

@@ -15,8 +15,8 @@ const getFiles = path =>
 const getFilesRecursively = (path) => {
     let dirs = getDirectories(path);
     let files = dirs
-        .map(dir => getFilesRecursively(dir)) // go through each directory
-        .reduce((a,b) => a.concat(b), []);    // map returns a 2d array (array of file arrays) so flatten
+        .map(dir => getFilesRecursively(dir))
+        .reduce((a,b) => a.concat(b), []);
     return files.concat(getFiles(path));
 };
 
@@ -27,6 +27,10 @@ module.exports = class extends Generator {
         this.argument('cartridgeName', { type: String, required: true });
 
         this.log('Creating a new cartridge `' + this.options.cartridgeName + '`');
+    }
+
+    initializing() {
+        this.spawnCommandSync('git', ['init', '--quiet']);
     }
 
     writing() {
@@ -41,5 +45,9 @@ module.exports = class extends Generator {
 
             that.fs.copyTpl(that.templatePath(relativeFile), that.destinationPath(newFile), { cartridgeName });
         })
+    }
+
+    install () {
+        this.spawnCommandSync('npm', ['install']);
     }
 };

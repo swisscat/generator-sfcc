@@ -1,8 +1,11 @@
 {
   "name": "generator-sfcc",
-  "version": "0.0.0-alpha1",
+  "version": "1.0.0",
   "description": "A Yeoman generator to generate Salesforce Commerce Cloud components",
   "main": "cartridge/index.js",
+  "scripts": {
+    "test": "exit"
+  },
   "engines": {
     "node": ">=12"
   },
@@ -24,6 +27,9 @@
   "author": "Etienne Favre",
   "license": "MIT",
   "dependencies": {
-    "yeoman-generator": "^1.1.1"
+    "yeoman-generator": "^5.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^8.3.2"
   }
 }
